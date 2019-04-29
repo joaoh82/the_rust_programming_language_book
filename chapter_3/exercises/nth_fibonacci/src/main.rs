@@ -1,8 +1,9 @@
 fn main() {
     print!("Result - recursive: {}\n", nth_fibonacci_recursive(50)); 
-    // 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+    // time - 104.31 real       103.63 user         0.30 sys
 
     print!("Result - dynamic: {}\n", nth_fibonacci_dynamic(50));
+    // time - 0.82 real         0.46 user         0.22 sys
 }
 
 fn nth_fibonacci_recursive(n: i32) -> u64 {
